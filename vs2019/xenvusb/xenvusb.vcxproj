@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\projectconfigurations.props" />
+  <Import Project="..\configs.props" />
   <PropertyGroup Label="PropertySheets">
     <DriverType>KMDF</DriverType>
     <DriverTargetPlatform>Desktop</DriverTargetPlatform>
@@ -14,46 +14,15 @@
     <ProjectGuid>{FAF03749-94FB-4569-BE66-CA68149F838E}</ProjectGuid>
     <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="..\targetconfigurations.props" />
+  <Import Project="..\targets.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10 Debug|Win32'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <Import Project="..\outputpaths.props" />
   <PropertyGroup>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <EnableInf2cat>false</EnableInf2cat>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10 Release|Win32'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7 Debug|Win32'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7 Release|Win32'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10 Debug|x64'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10 Release|x64'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7 Debug|x64'">
-    <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
-    <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7 Release|x64'">
     <OutDir>..\$(ConfigurationName)\$(Platform)\</OutDir>
     <IntDir>..\$(ProjectName)\$(ConfigurationName)\$(Platform)\</IntDir>
   </PropertyGroup>
