@@ -43,9 +43,9 @@ xenvusb_coinst.dll=0,,
 xenvusb_coinst_@MAJOR_VERSION@_@MINOR_VERSION@_@MICRO_VERSION@_@BUILD_NUMBER@.dll,xenvusb_coinst.dll
 
 [Manufacturer]
-%Vendor%=Inst,NT$ARCH$
+%Vendor%=Inst,NT@INF_ARCH@
 
-[Inst.NT$ARCH$]
+[Inst.NT@INF_ARCH@]
 ; DisplayName		Section		DeviceID
 ; -----------		-------		--------
 
